@@ -1,13 +1,64 @@
+
+body,
+h1 {
+	font: 13px/1.3em Arial, Verdana, Serif;
+	
+}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+nav {
+	padding: 10px 5px 0;
+	background: #333;
+}
+nav h1 {
+	display: inline-block;
+	margin: 0 15px;
+	padding: 0;
+	color: #fff;
+}
+nav button {
+	background: #999;
+	border: 0;
+	padding: 10px 15px;
+	margin: 0 5px;
+	cursor: pointer;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+nav button.selected {
+	background: #f9f9f9;
+}
+nav button:hover {
+	opacity: 0.8;
+}
+nav .github {
+	margin: 0 5px;
+	color: #fff;
+}
+nav .github:hover {
+	text-decoration: none;
+}
+@media only screen and (max-width: 700px) {
+	nav h1 {
+		display: none;
+	}
+}
+
+.sqd-designer-react {
+	width: 100vw;
+	height: 100vh;
+	
+}
+.sqd-editor {
+	padding: 10px;
+}
+input:read-only {
+	opacity: 0.35;
+}
+.sqd-control-bar{
+	bottom: 10vh !important;
 }

@@ -1,0 +1,24 @@
+class Steps {
+	static setSumber(name: string, targetVarName: string, value: any){
+		return createTaskStep('setNumber', name, {
+			targetVarName,
+			value
+		});
+	}
+
+	static assignVar(name: string, targetVarName: string, sourceVarName: string){
+		return createTaskStep('assignVar', name, {
+			targetVarName,
+			sourceVarName
+		});
+	}
+
+	static addVar(name: string, targetVarName: string, sourceVarName: string ){
+		return createTaskStep('addVar', name, {
+			targetVarName,
+			sourceVarName
+		})
+	}
+
+	static loop(name, varName)
+}
